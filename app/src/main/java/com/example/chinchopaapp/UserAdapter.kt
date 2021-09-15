@@ -26,7 +26,17 @@ class UserAdapter : RecyclerView.Adapter<UserAdapter.ViewHolder>() {
 
     val userList: List<User> = listOf(
         User("kek", "Shleppa", "Nazbol"),
-        User("kek", "Andrei", "SHUEPPSH")
+        User("kek", "Andrei", "SHUEPPSH"),
+        User("kek", "Shleppa", "Nazbol"),
+        User("kek", "Andrei", "SHUEPPSH"),
+        User("kek", "Shleppa", "Nazbol"),
+        User("kek", "Andrei", "SHUEPPSH"),
+        User("kek", "Shleppa", "Nazbol"),
+        User("kek", "Andrei", "SHUEPPSH"),
+        User("kek", "Shleppa", "Nazbol"),
+        User("kek", "Andrei", "SHUEPPSH"),
+        User("kek", "Shleppa", "Nazbol"),
+        User("kek", "Andrei", "SHUEPPSH"),
     )
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
