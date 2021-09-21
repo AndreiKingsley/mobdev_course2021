@@ -5,8 +5,13 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.squareup.moshi.Moshi
+import okhttp3.OkHttpClient
+import retrofit2.Retrofit
+import retrofit2.converter.moshi.MoshiConverterFactory
+import retrofit2.create
 
 class UserAdapter : RecyclerView.Adapter<UserAdapter.ViewHolder>() {
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -24,27 +29,17 @@ class UserAdapter : RecyclerView.Adapter<UserAdapter.ViewHolder>() {
         return ViewHolder(view)
     }
 
-    val userList: List<User> = listOf(
-        User("kek", "Shleppa", "Nazbol"),
-        User("kek", "Andrei", "SHUEPPSH"),
-        User("kek", "Shleppa", "Nazbol"),
-        User("kek", "Andrei", "SHUEPPSH"),
-        User("kek", "Shleppa", "Nazbol"),
-        User("kek", "Andrei", "SHUEPPSH"),
-        User("kek", "Shleppa", "Nazbol"),
-        User("kek", "Andrei", "SHUEPPSH"),
-        User("kek", "Shleppa", "Nazbol"),
-        User("kek", "Andrei", "SHUEPPSH"),
-        User("kek", "Shleppa", "Nazbol"),
-        User("kek", "Andrei", "SHUEPPSH"),
-    )
+    var userList: List<User> = listOf()
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        //holder.avatarImageView.setImageBitmap(userList[position].avatar)
-        holder.avatarImageView.setImageResource(R.mipmap.ic_launcher)
-        holder.groupNameView.text = userList[position].groupName
+        Glide.with(holder.avatarImageView)
+            .load(userList[position].avatarUrl)
+            .circleCrop()
+            .into(holder.avatarImageView)
         holder.nameView.text = userList[position].name
+        holder.groupNameView.text = userList[position].email
     }
 
     override fun getItemCount(): Int = userList.size
+
 }
