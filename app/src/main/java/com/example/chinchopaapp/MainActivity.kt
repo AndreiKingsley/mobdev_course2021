@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
     val viewModel: MainViewModel by viewModels()
 
-    //private val viewBinding by viewBinding(ActivityMainBinding::bind)
+    private val viewBinding by viewBinding(ActivityMainBinding::bind)
 
     @SuppressLint("NotifyDataSetChanged")
     override fun onCreate(savedInstanceState: Bundle?) {

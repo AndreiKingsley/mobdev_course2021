@@ -36,6 +36,10 @@ android {
 
 dependencies {
 
+    def exoPlayerVersion = "2.15.0"
+    implementation "com.google.android.exoplayer:exoplayer-core:$exoPlayerVersion"
+    implementation "com.google.android.exoplayer:exoplayer-ui:$exoPlayerVersion"
+
     // HTTP client.
     def retrofitVersion = "2.9.0"
     def okhttpVersion = '4.9.0'
