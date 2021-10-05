@@ -9,7 +9,7 @@ import okhttp3.OkHttpClient
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
-class MainViewModel : ViewModel() {
+class MainViewModel : BaseViewModel() {
     sealed class ViewState {
         object Loading : ViewState()
         data class Data(val users: List<User>) : ViewState()

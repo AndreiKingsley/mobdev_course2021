@@ -3,13 +3,16 @@ package com.example.chinchopaapp
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.PersistableBundle
 import android.view.View
 import androidx.core.view.isVisible
 import androidx.activity.viewModels
 import androidx.lifecycle.*
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.chinchopaapp.databinding.ActivityMainBinding
+//import com.example.chinchopaapp.databinding.ActivityMainBinding
 import com.squareup.moshi.Moshi
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.delay
@@ -23,12 +26,22 @@ import retrofit2.create
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
     val viewModel: MainViewModel by viewModels()
-
     private val viewBinding by viewBinding(ActivityMainBinding::bind)
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+       /* supportFragmentManager.beginTransaction().replace(
+            R.id.fragmentContainerView,
+
+        )
+
+        */
+    }
+/*
     @SuppressLint("NotifyDataSetChanged")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        /*
         val userAdapter = setupRecyclerView()
         val userRecyclerView = findViewById<View>(R.id.recyclerView).also {
             it.isVisible = false
@@ -55,7 +68,13 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
                 }
             }
         }
+
+
+
+         */
+
     }
+
 
     private fun setupRecyclerView(): UserAdapter {
         val usersRecyclerView = findViewById<RecyclerView>(R.id.recyclerView)
@@ -63,4 +82,6 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         usersRecyclerView.adapter = userAdapter
         return userAdapter
     }
+
+     */
 }
