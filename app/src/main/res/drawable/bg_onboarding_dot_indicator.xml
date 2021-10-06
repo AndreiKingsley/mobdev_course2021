@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <shape xmlns:android="http://schemas.android.com/apk/res/android"
-        android:innerRadius="0dp"
-        android:shape="ring"
-        android:thickness="@dimen/onboarding_dot_size_half"
-        android:useLevel="false">
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:innerRadius="0dp"
+    android:shape="ring"
+    android:thickness="@dimen/onboarding_dot_size_half"
+    android:useLevel="false">
 
-        <solid android:color="#FF0000" />
+    <solid android:color="#000000" />
 
-    </shape>
+    <size android:height="@dimen/onboarding_dot_size" />
+
+</shape>
