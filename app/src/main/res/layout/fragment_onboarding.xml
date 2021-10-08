@@ -56,7 +56,7 @@
         app:tabBackground="@drawable/bg_onboarding_dot_normal"
         app:tabGravity="center"
         app:tabIndicator="@drawable/bg_onboarding_dot_indicator"
-        app:tabIndicatorColor="#FF0000"
+        app:tabIndicatorColor="#000000"
         app:tabIndicatorGravity="center"
         app:tabMaxWidth="18dp"
         app:tabMinWidth="18dp" />
