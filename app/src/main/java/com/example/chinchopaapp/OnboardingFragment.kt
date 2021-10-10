@@ -1,8 +1,10 @@
 package com.example.chinchopaapp
 
+import android.graphics.Color
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import androidx.core.view.ViewCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
 import androidx.viewpager2.widget.ViewPager2
@@ -120,6 +122,16 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
             Toast.makeText(requireContext(), "Нажата кнопка зарегистрироваться", Toast.LENGTH_SHORT)
                 .show()
         }
+        viewBinding.viewPager.setOffscreenPageLimit(3)
+        viewBinding.viewPager.setPageTransformer { page, position ->
+            val myOffset: Float = position * -150
+            if (position < -1) {
+                page.setTranslationX(-myOffset)
+            } else {
+                page.setTranslationX(myOffset)
+            }
+        }
+
         val volumeControlButton = viewBinding.volumeControlButton
         viewBinding.volumeControlButton.setOnClickListener {
             if (volumeUp) {
@@ -161,6 +173,7 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
         }
         volumeUp = false
     }
+
 
     private fun ViewPager2.setTextPages() {
         adapter =
