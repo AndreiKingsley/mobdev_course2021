@@ -10,7 +10,11 @@
         <entry key="..\:/appcc/app/src/main/res/drawable/ic_volume_off_white_24dp.xml" value="0.20677083333333332" />
         <entry key="..\:/appcc/app/src/main/res/drawable/ic_volume_up_white_24dp.xml" value="0.20677083333333332" />
         <entry key="..\:/appcc/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
+        <entry key="..\:/appcc/app/src/main/res/layout/fragment_bookmarks.xml" value="0.17447916666666666" />
         <entry key="..\:/appcc/app/src/main/res/layout/fragment_email_confitmation.xml" value="0.20520833333333333" />
+        <entry key="..\:/appcc/app/src/main/res/layout/fragment_likes.xml" value="0.17447916666666666" />
+        <entry key="..\:/appcc/app/src/main/res/layout/fragment_main.xml" value="0.17447916666666666" />
+        <entry key="..\:/appcc/app/src/main/res/layout/fragment_new.xml" value="0.17447916666666666" />
         <entry key="..\:/appcc/app/src/main/res/layout/fragment_onboarding.xml" value="0.190625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="app/src/main/res/layout/item_user.xml" value="0.67" />

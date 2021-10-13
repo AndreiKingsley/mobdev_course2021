@@ -10,6 +10,9 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
 class MainViewModel : BaseViewModel() {
+    val isAuthorizedFlow: Flow<Boolean> = MutableStateFlow(false)
+
+    /*
     sealed class ViewState {
         object Loading : ViewState()
         data class Data(val users: List<User>) : ViewState()
@@ -49,4 +52,6 @@ class MainViewModel : BaseViewModel() {
     private fun provideMoshi(): Moshi {
         return Moshi.Builder().build()
     }
+
+     */
 }

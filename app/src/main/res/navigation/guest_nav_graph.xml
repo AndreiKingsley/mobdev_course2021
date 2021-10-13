@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/guest_nav_graph"
+    app:startDestination="@id/onboardingFragment">
+
+    <include app:graph="@navigation/guest_nav_graph" />
+
+    <include app:graph="@navigation/registered_user_nav_graph" />
+    <fragment
+        android:id="@+id/onboardingFragment"
+        android:name="com.example.chinchopaapp.OnboardingFragment"
+        android:label="OnboardingFragment" >
+        <action
+            android:id="@+id/action_onboardingFragment_to_signInFragment"
+            app:destination="@id/signInFragment" />
+        <action
+            android:id="@+id/action_onboardingFragment_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signInFragment"
+        android:name="com.example.chinchopaapp.SignInFragment"
+        android:label="SignInFragment" />
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.chinchopaapp.SignUpFragment"
+        android:label="SignUpFragment" />
+
+</navigation>
