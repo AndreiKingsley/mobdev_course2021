@@ -1,3 +1,5 @@
+package com.example.chinchopaapp
+
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -6,11 +8,10 @@ import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
-import com.example.chinchopaapp.MainViewModel
-import com.example.chinchopaapp.R
 import com.example.chinchopaapp.databinding.ActivityMainBinding
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
+import timber.log.Timber
 
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
@@ -19,14 +20,18 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
     private val viewModel: MainViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        Timber.d("MAIN!!!!!!")
         super.onCreate(savedInstanceState)
+        Timber.d("MAIN2!!!!!!")
         subscribeToAuthorizationStatus()
     }
 
     private fun subscribeToAuthorizationStatus() {
+        Timber.d("HERE1!!!!")
         lifecycleScope.launch {
             lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
                 viewModel.isAuthorizedFlow.collect {
+                    Timber.d("COLLECT!!!!")
                     showSuitableNavigationFlow(it)
                 }
             }
@@ -54,7 +59,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
 }
 
 /*
-class MainActivity : AppCompatActivity(R.layout.activity_main) {
+class com.example.chinchopaapp.MainActivity : AppCompatActivity(R.layout.activity_main) {
 
     val viewModel: MainViewModel by viewModels()
     private val viewBinding by viewBinding(ActivityMainBinding::bind)

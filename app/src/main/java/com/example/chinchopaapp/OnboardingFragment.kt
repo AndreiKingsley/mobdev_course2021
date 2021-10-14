@@ -20,6 +20,7 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import kotlinx.coroutines.*
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
+import timber.log.Timber
 
 
 class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
@@ -30,6 +31,7 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        Timber.d("ONBOARDING!!!!!!")
         setPlayer()
     }
 

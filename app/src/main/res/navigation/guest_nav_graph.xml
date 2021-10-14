@@ -4,9 +4,6 @@
     android:id="@+id/guest_nav_graph"
     app:startDestination="@id/onboardingFragment">
 
-    <include app:graph="@navigation/guest_nav_graph" />
-
-    <include app:graph="@navigation/registered_user_nav_graph" />
     <fragment
         android:id="@+id/onboardingFragment"
         android:name="com.example.chinchopaapp.OnboardingFragment"
