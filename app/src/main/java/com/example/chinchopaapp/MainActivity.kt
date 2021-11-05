@@ -30,6 +30,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         Timber.d("HERE1!!!!")
         lifecycleScope.launch {
             lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                Timber.d("HERE2!!!!")
                 viewModel.isAuthorizedFlow.collect {
                     Timber.d("COLLECT!!!!")
                     showSuitableNavigationFlow(it)

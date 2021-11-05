@@ -6,12 +6,15 @@
         <entry key="..\:/appcc/app/src/main/res/drawable/bg_onboarding_dot_indicator.xml" value="0.22135416666666666" />
         <entry key="..\:/appcc/app/src/main/res/drawable/bg_onboarding_dot_normal.xml" value="0.22135416666666666" />
         <entry key="..\:/appcc/app/src/main/res/drawable/ic_android_white_24dp.xml" value="0.20677083333333332" />
+        <entry key="..\:/appcc/app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.22135416666666666" />
         <entry key="..\:/appcc/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
         <entry key="..\:/appcc/app/src/main/res/drawable/ic_volume_off_white_24dp.xml" value="0.20677083333333332" />
         <entry key="..\:/appcc/app/src/main/res/drawable/ic_volume_up_white_24dp.xml" value="0.20677083333333332" />
         <entry key="..\:/appcc/app/src/main/res/layout/activity_main.xml" value="0.35260416666666666" />
         <entry key="..\:/appcc/app/src/main/res/layout/fragment_email_confitmation.xml" value="0.20520833333333333" />
         <entry key="..\:/appcc/app/src/main/res/layout/fragment_onboarding.xml" value="0.190625" />
+        <entry key="..\:/appcc/app/src/main/res/layout/fragment_sign_in.xml" value="0.20520833333333333" />
+        <entry key="..\:/appcc/app/src/main/res/layout/item_user.xml" value="0.20520833333333333" />
         <entry key="app/src/main/res/drawable/ic_android_white_24dp.xml" value="0.2546875" />
         <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2546875" />
         <entry key="app/src/main/res/layout/activity_kek.xml" value="0.20425724637681159" />

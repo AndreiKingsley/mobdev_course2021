@@ -7,5 +7,6 @@
     <string name="onboarding_sign_up_button_text">Зарегистрироваться</string>
     <string name="main">Main</string>
     <string name="news">News</string>
+    <string name="sign_in_sign_in_button_text">Войти</string>
 </resources>
 

@@ -15,6 +15,7 @@
             android:id="@+id/action_onboardingFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/signInFragment"
         android:name="com.example.chinchopaapp.SignInFragment"

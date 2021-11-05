@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.core.view.ViewCompat
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
+import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.example.chinchopaapp.databinding.FragmentOnboardingBinding
 import com.google.android.exoplayer2.ExoPlayer
@@ -132,6 +133,12 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
             } else {
                 page.setTranslationX(myOffset)
             }
+        }
+
+        viewBinding.signInButton.setOnClickListener {
+            // TODO: Go to SignInFragment.
+            Toast.makeText(requireContext(), "Нажата кнопка войти", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_onboardingFragment_to_signInFragment)
         }
 
         val volumeControlButton = viewBinding.volumeControlButton
