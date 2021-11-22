@@ -1,5 +1,6 @@
 package com.example.chinchopaapp
-
+/*
+import com.example.chinchopaapp.userlist.User
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
 import retrofit2.http.GET
@@ -14,3 +15,5 @@ interface API {
 data class GetUsersResponse(
     @Json(name = "data") val data: List<User>
 )
+
+ */

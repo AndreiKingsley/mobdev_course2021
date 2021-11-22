@@ -2,20 +2,19 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/guest_nav_graph"
-    app:startDestination="@id/onboardingFragment">
+    app:startDestination="@id/onBoardingFragment">
 
     <fragment
-        android:id="@+id/onboardingFragment"
+        android:id="@+id/onBoardingFragment"
         android:name="com.example.chinchopaapp.OnboardingFragment"
-        android:label="OnboardingFragment" >
+        android:label="OnBoardingFragment" >
         <action
-            android:id="@+id/action_onboardingFragment_to_signInFragment"
+            android:id="@+id/action_onBoardingFragment_to_signInFragment"
             app:destination="@id/signInFragment" />
         <action
-            android:id="@+id/action_onboardingFragment_to_signUpFragment"
+            android:id="@+id/action_onBoardingFragment_to_signUpFragment"
             app:destination="@id/signUpFragment" />
     </fragment>
-
     <fragment
         android:id="@+id/signInFragment"
         android:name="com.example.chinchopaapp.SignInFragment"
@@ -23,6 +22,14 @@
     <fragment
         android:id="@+id/signUpFragment"
         android:name="com.example.chinchopaapp.SignUpFragment"
-        android:label="SignUpFragment" />
+        android:label="SignUpFragment" >
 
+        <action
+            android:id="@+id/action_signUpFragment_to_mainFragment2"
+            app:destination="@id/mainFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainFragment2"
+        android:name="com.example.chinchopaapp.MainFragment"
+        android:label="MainFragment" />
 </navigation>

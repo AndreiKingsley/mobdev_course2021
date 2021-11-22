@@ -116,10 +116,13 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
         viewBinding.playerView.player = player
         viewBinding.viewPager.setTextPages()
         viewBinding.viewPager.attachDots(viewBinding.onboardingTextTabLayout)
+        /*
         viewBinding.signInButton.setOnClickListener {
             // TODO: Go to SignInFragment.
             Toast.makeText(requireContext(), "Нажата кнопка войти", Toast.LENGTH_SHORT).show()
         }
+
+         */
         viewBinding.signUpButton.setOnClickListener {
             // TODO: Go to SignUpFragment.
             Toast.makeText(requireContext(), "Нажата кнопка зарегистрироваться", Toast.LENGTH_SHORT)
@@ -138,7 +141,7 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
         viewBinding.signInButton.setOnClickListener {
             // TODO: Go to SignInFragment.
             Toast.makeText(requireContext(), "Нажата кнопка войти", Toast.LENGTH_SHORT).show()
-            findNavController().navigate(R.id.action_onboardingFragment_to_signInFragment)
+            findNavController().navigate(R.id.action_onBoardingFragment_to_signInFragment)
         }
 
         val volumeControlButton = viewBinding.volumeControlButton

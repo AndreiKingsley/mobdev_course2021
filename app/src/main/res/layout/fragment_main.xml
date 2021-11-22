@@ -14,7 +14,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:navGraph="@navigation/main_nav_graph" />
+        app:navGraph="@navigation/bottom_navigation_graph" />
 
     <TextView
         android:layout_width="wrap_content"

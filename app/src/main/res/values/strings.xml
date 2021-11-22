@@ -8,5 +8,12 @@
     <string name="main">Main</string>
     <string name="news">News</string>
     <string name="sign_in_sign_in_button_text">Войти</string>
+
+
+    <string name="bottom_navigation_title_news">Лента</string>
+    <string name="bottom_navigation_title_people">Люди</string>
+    <string name="bottom_navigation_title_likes">Лайки</string>
+    <string name="bottom_navigation_title_bookmarks">Закладки</string>
+    <string name="bottom_navigation_title_profile">Профиль</string>
 </resources>
 

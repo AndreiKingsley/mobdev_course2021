@@ -2,19 +2,10 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/registered_user_nav_graph"
-    app:startDestination="@id/onboardingFragment">
-
+    app:startDestination="@id/mainFragment">
 
     <fragment
         android:id="@+id/mainFragment"
         android:name="com.example.chinchopaapp.MainFragment"
-        android:label="MainFragment" >
-        <action
-            android:id="@+id/action_mainFragment_to_newsFragment"
-            app:destination="@id/newsFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/newsFragment"
-        android:name="com.example.chinchopaapp.NewsFragment"
-        android:label="NewsFragment" />
+        android:label="MainFragment" />
 </navigation>

@@ -10,7 +10,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
 class MainViewModel : BaseViewModel() {
-    val isAuthorizedFlow: Flow<Boolean> = MutableStateFlow(false)
+    val isAuthorizedFlow: Flow<Boolean> = AuthRepository.isAuthorizedFlow
 
     /*
     sealed class ViewState {
