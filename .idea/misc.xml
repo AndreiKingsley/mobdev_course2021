@@ -31,6 +31,7 @@
         <entry key="..\:/mobdev_course2021/app/src/main/res/drawable/bg_verification_code_slot_normal.xml" value="0.3769230769230769" />
         <entry key="..\:/mobdev_course2021/app/src/main/res/drawable/selector_bg_verification_code_slot.xml" value="0.3769230769230769" />
         <entry key="..\:/mobdev_course2021/app/src/main/res/layout/fragment_bookmarks.xml" value="0.20520833333333333" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/layout/fragment_email_confirmation.xml" value="0.20520833333333333" />
         <entry key="..\:/mobdev_course2021/app/src/main/res/layout/fragment_email_confitmation.xml" value="0.276268115942029" />
         <entry key="..\:/mobdev_course2021/app/src/main/res/layout/fragment_sign_in.xml" value="0.28940217391304346" />
         <entry key="..\:/mobdev_course2021/app/src/main/res/layout/fragment_sign_up.xml" value="0.28940217391304346" />
