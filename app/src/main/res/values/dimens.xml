@@ -2,4 +2,7 @@
 <resources>
     <dimen name="onboarding_dot_size">8dp</dimen>
     <dimen name="onboarding_dot_size_half">4dp</dimen>
+    <dimen name="verification_code_slot_width">36dp</dimen>
+    <dimen name="verification_code_slot_height">48dp</dimen>
+    <dimen name="verification_code_slot_corner_radius">10dp</dimen>
 </resources>

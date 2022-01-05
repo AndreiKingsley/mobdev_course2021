@@ -17,11 +17,11 @@
     </fragment>
     <fragment
         android:id="@+id/signInFragment"
-        android:name="com.example.chinchopaapp.SignInFragment"
+        android:name="com.example.chinchopaapp.sign_in.SignInFragment"
         android:label="SignInFragment" />
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="com.example.chinchopaapp.SignUpFragment"
+        android:name="com.example.chinchopaapp.sign_up.SignUpFragment"
         android:label="SignUpFragment" >
 
         <action
@@ -32,4 +32,8 @@
         android:id="@+id/mainFragment2"
         android:name="com.example.chinchopaapp.MainFragment"
         android:label="MainFragment" />
+    <fragment
+        android:id="@+id/emailConfirmationFragment"
+        android:name="com.example.chinchopaapp.email_confirmation.EmailConfirmationFragment"
+        android:label="EmailConfirmationFragment" />
 </navigation>
