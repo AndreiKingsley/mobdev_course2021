@@ -3,36 +3,35 @@ package com.example.chinchopaapp
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.navigation.findNavController
 import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.chinchopaapp.databinding.ActivityMainBinding
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.launch
 import timber.log.Timber
 
+@AndroidEntryPoint
 class MainActivity : AppCompatActivity(R.layout.activity_main) {
 
     private val viewBinding by viewBinding(ActivityMainBinding::bind)
 
-    private val viewModel: MainViewModel by viewModels()
+    val viewModel: MainViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        Timber.d("MAIN!!!!!!")
         super.onCreate(savedInstanceState)
-        Timber.d("MAIN2!!!!!!")
+        WindowCompat.setDecorFitsSystemWindows(window, false)
         subscribeToAuthorizationStatus()
     }
 
     private fun subscribeToAuthorizationStatus() {
-        Timber.d("HERE1!!!!")
         lifecycleScope.launch {
             lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
-                Timber.d("HERE2!!!!")
-                viewModel.isAuthorizedFlow.collect {
-                    Timber.d("COLLECT!!!!")
+                viewModel.isAuthorizedFlow().collect {
                     showSuitableNavigationFlow(it)
                 }
             }

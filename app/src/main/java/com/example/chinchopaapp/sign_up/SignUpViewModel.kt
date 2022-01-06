@@ -24,6 +24,8 @@ class SignUpViewModel : BaseViewModel() {
         password: String
     ) {
         viewModelScope.launch {
+            // TODO
+            /*
             try {
                 AuthRepository.signUp(
                     firstname,
@@ -37,6 +39,8 @@ class SignUpViewModel : BaseViewModel() {
             } catch (error: Exception) {
                 _eventChannel.send(Event.SignUpEmailConfirmationRequired)
             }
+
+             */
         }
     }
 
