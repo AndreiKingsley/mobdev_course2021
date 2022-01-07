@@ -39,5 +39,8 @@
     <string name="email_confirmation_send_code_again">Выслать код повторно</string>
     <string name="email_verification_send_code_timer_string">Через %s секунд</string>
     <string name="email_confirmation_confirm_code">Подтвердить код</string>
+    <string name="search_users_hint">Найти пользователей</string>
+    <string name="users_toolbar_title">Пользователи</string>
+    <string name="search_by_substring_option">Искать по подстроке</string>
 </resources>
 
