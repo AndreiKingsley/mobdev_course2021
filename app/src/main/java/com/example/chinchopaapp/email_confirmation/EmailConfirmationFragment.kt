@@ -23,6 +23,20 @@ class EmailConfirmationFragment : BaseFragment(R.layout.fragment_email_confirmat
 
     private val viewModel: EmailConfirmationViewModel by viewModels()
 
+    private fun iniTimer() = object: CountDownTimer(10*1000, 1000){
+        override fun onTick(millisUntilFinished: Long) {
+            viewBinding.emailVerificationSendCodeTimer.text =
+                resources.getString(R.string.email_verification_send_code_timer_string)
+                    .replace("%s", (millisUntilFinished/1000).toString())
+        }
+
+        override fun onFinish() {
+            viewBinding.sendCodeButton.isEnabled = true
+        }
+    }
+
+    var timer: CountDownTimer = iniTimer()
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         viewBinding.backButton.applyInsetter {
@@ -46,17 +60,12 @@ class EmailConfirmationFragment : BaseFragment(R.layout.fragment_email_confirmat
 
     private fun setupResend(){
         viewBinding.sendCodeButton.isEnabled = false
-        object: CountDownTimer(10*1000, 1000){
-            override fun onTick(millisUntilFinished: Long) {
-                viewBinding.emailVerificationSendCodeTimer.text =
-                    resources.getString(R.string.email_verification_send_code_timer_string)
-                        .replace("%s", (millisUntilFinished/1000).toString())
-            }
+        timer.start()
+    }
 
-            override fun onFinish() {
-                viewBinding.sendCodeButton.isEnabled = true
-            }
-        }.start()
+    override fun onDestroy() {
+        super.onDestroy()
+        timer.cancel()
     }
 
 }

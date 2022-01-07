@@ -42,5 +42,7 @@
     <string name="search_users_hint">Найти пользователей</string>
     <string name="users_toolbar_title">Пользователи</string>
     <string name="search_by_substring_option">Искать по подстроке</string>
+    <string name="logout_button_desc">Logout Button</string>
+    <string name="profile_toolbar_title">Профиль</string>
 </resources>
 

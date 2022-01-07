@@ -70,7 +70,7 @@ android {
 
     applicationVariants.all { variant ->
         variant.outputs.all { output ->
-            outputFileName = "pavlov-ivan-${variant.versionName}-${variant.buildType.name}.apk"
+            outputFileName = "kislitsyn-andrei-${variant.versionName}-${variant.buildType.name}.apk"
         }
     }
 }
