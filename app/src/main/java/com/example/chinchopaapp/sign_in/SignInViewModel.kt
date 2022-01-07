@@ -1,7 +1,6 @@
 package com.example.chinchopaapp.sign_in
 
 import androidx.lifecycle.viewModelScope
-import com.example.chinchopaapp.AuthRepository
 import com.example.chinchopaapp.BaseViewModel
 import com.example.chinchopaapp.data.network.response.error.SignInWithEmailErrorResponse
 import com.example.chinchopaapp.interactor.AuthInteractor

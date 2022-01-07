@@ -1,6 +1,6 @@
 package com.example.chinchopaapp.data.network.interceptor
 
-import com.example.chinchopaapp.AuthRepository
+import com.example.chinchopaapp.repository.AuthRepository
 import com.haroldadmin.cnradapter.NetworkResponse
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.runBlocking

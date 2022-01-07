@@ -1,4 +1,4 @@
-package com.example.chinchopaapp
+package com.example.chinchopaapp.repository
 
 import com.example.chinchopaapp.data.network.Api
 import com.example.chinchopaapp.data.network.request.CreateProfileRequest

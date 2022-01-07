@@ -3,6 +3,10 @@ package com.example.chinchopaapp.sign_in
 import android.app.AlertDialog
 import android.os.Bundle
 import android.view.View
+import android.view.animation.Animation
+import android.view.animation.LinearInterpolator
+import android.view.animation.RotateAnimation
+import android.view.animation.ScaleAnimation
 import androidx.activity.OnBackPressedCallback
 import androidx.core.widget.doAfterTextChanged
 import androidx.fragment.app.viewModels
@@ -41,6 +45,22 @@ class SignInFragment : BaseFragment(R.layout.fragment_sign_in) {
             viewModel.signIn(
                 email = viewBinding.emailEditText.text?.toString() ?: "",
                 password = viewBinding.passwordEditText.text?.toString() ?: ""
+            )
+        }
+        viewBinding.mknLogoImageView.apply {
+            startAnimation(
+                RotateAnimation(
+                    0.0f,
+                    360.0f,
+                    Animation.RELATIVE_TO_SELF,
+                    0.5f,
+                    Animation.RELATIVE_TO_SELF,
+                    0.5f
+                ).apply {
+                    interpolator = LinearInterpolator()
+                    duration = 7000L
+                    repeatCount = Animation.INFINITE
+                }
             )
         }
         subscribeToFormFields()

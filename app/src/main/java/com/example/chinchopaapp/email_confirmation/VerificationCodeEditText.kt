@@ -18,10 +18,10 @@ class VerificationCodeEditText @JvmOverloads constructor(
     defStyleRes: Int = 0
 ) : ConstraintLayout(context, attrs, defStyleAttr, defStyleRes) {
 
-    private val viewBinding =
+     val viewBinding =
         ViewVerificationCodeEditTextBinding.inflate(LayoutInflater.from(context), this)
 
-    private val slotViews: List<VerificationCodeSlotView> =
+     val slotViews: List<VerificationCodeSlotView> =
         listOf(
             viewBinding.slot1,
             viewBinding.slot2,
@@ -30,6 +30,9 @@ class VerificationCodeEditText @JvmOverloads constructor(
             viewBinding.slot5,
             viewBinding.slot6
         )
+
+    val allIsFilled: Boolean
+        get() = slotViews.all { isFilled() }
 
     private val slotValues: Array<CharSequence?> = Array(6) { null }
 
@@ -44,10 +47,17 @@ class VerificationCodeEditText @JvmOverloads constructor(
 
                 private var wasClearedLastSlot = false
 
-                override fun beforeTextChanged(s: CharSequence, start: Int, count: Int, after: Int) {}
+                override fun beforeTextChanged(
+                    s: CharSequence,
+                    start: Int,
+                    count: Int,
+                    after: Int
+                ) {
+                }
 
                 override fun onTextChanged(s: CharSequence, start: Int, before: Int, count: Int) {
-                    wasClearedLastSlot = !wasClearedLastSlot && start + before == slotViews.size && count == 0
+                    wasClearedLastSlot =
+                        !wasClearedLastSlot && start + before == slotViews.size && count == 0
                 }
 
                 override fun afterTextChanged(s: Editable) {
@@ -122,5 +132,7 @@ class VerificationCodeEditText @JvmOverloads constructor(
         all { it != null }
 
     private fun Array<CharSequence?>.toCodeString(): String =
-        joinToString(separator = "", prefix = "", postfix = "", limit = -1, truncated = "") { it ?: "" }
+        joinToString(separator = "", prefix = "", postfix = "", limit = -1, truncated = "") {
+            it ?: ""
+        }
 }

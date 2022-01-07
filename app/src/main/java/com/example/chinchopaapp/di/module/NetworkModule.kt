@@ -1,7 +1,7 @@
 package com.example.chinchopaapp.di.module
 
 import android.os.Build
-import com.example.chinchopaapp.AuthRepository
+import com.example.chinchopaapp.repository.AuthRepository
 import com.example.chinchopaapp.BuildConfig
 import com.example.chinchopaapp.data.network.Api
 import com.example.chinchopaapp.data.network.MockApi

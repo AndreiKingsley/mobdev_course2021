@@ -1,6 +1,6 @@
 package com.example.chinchopaapp.interactor
 
-import com.example.chinchopaapp.AuthRepository
+import com.example.chinchopaapp.repository.AuthRepository
 import com.example.chinchopaapp.data.network.response.error.SignInWithEmailErrorResponse
 import com.example.chinchopaapp.entity.AuthTokens
 import com.haroldadmin.cnradapter.NetworkResponse

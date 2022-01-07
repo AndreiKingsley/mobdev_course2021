@@ -24,9 +24,11 @@ import com.example.chinchopaapp.BaseFragment
 import com.example.chinchopaapp.R
 import com.example.chinchopaapp.databinding.FragmentSignUpBinding
 import com.example.chinchopaapp.getSpannedString
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.flow.collect
 
+@AndroidEntryPoint
 class SignUpFragment : BaseFragment(R.layout.fragment_sign_up) {
     private val viewModel: SignUpViewModel by viewModels()
     private val viewBinding by viewBinding(FragmentSignUpBinding::bind)

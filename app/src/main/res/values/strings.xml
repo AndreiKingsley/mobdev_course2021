@@ -1,3 +1,5 @@
+<!DOCTYPE resources [<!-- Non-breaking space, U+00A0. -->
+    <!ENTITY nbsp "&#160;">]>
 <resources>
     <string name="app_name">Android App Club</string>
     <string name="onboarding_view_pager_text_1">Welcome to the App Zone</string>
@@ -7,7 +9,6 @@
     <string name="onboarding_sign_up_button_text">Зарегистрироваться</string>
     <string name="main">MainKek</string>
     <string name="news">News</string>
-
 
 
     <string name="bottom_navigation_title_news">Лента</string>
@@ -30,5 +31,13 @@
     <string name="sign_up_under_email_text">Будет виден только вам</string>
     <string name="sign_up_sign_up_button_text">Зарегистрироваться</string>
     <string name="sign_up_under_nickname_text">Будет виден всем пользователям</string>
+    <string name="news_toolbar_title">Новости</string>
+    <string name="logout_button_text">Logout</string>
+    <string name="common_general_error_text">Что-то пошло не так</string>
+    <string name="back_desc">Back</string>
+    <string name="email_verification_title_text">Код подтверждения выслан вам на почту</string>
+    <string name="email_confirmation_send_code_again">Выслать код повторно</string>
+    <string name="email_verification_send_code_timer_string">Через %s секунд</string>
+    <string name="email_confirmation_confirm_code">Подтвердить код</string>
 </resources>
 
