@@ -44,5 +44,6 @@
     <string name="search_by_substring_option">Искать по подстроке</string>
     <string name="logout_button_desc">Logout Button</string>
     <string name="profile_toolbar_title">Профиль</string>
+    <string name="no_users_found_text">Пользователей не найдено</string>
 </resources>
 

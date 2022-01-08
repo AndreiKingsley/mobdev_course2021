@@ -9,7 +9,7 @@
 
     <ImageView
         tools:src="@tools:sample/avatars"
-        android:id="@+id/imageView"
+        android:id="@+id/avatarImageView"
 
         android:layout_width="100dp"
         android:layout_height="100dp"
@@ -20,7 +20,7 @@
 
     <TextView
         style="@style/TextAppearance.MaterialComponents.Headline6"
-        android:id="@+id/nameView"
+        android:id="@+id/userNameView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
@@ -28,7 +28,7 @@
 
         app:layout_constraintBottom_toTopOf="@id/groupNameView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/imageView"
+        app:layout_constraintStart_toEndOf="@id/avatarImageView"
         app:layout_constraintTop_toTopOf="parent"
 
         app:layout_constraintVertical_chainStyle="packed"
@@ -44,8 +44,8 @@
 
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/imageView"
-        app:layout_constraintTop_toBottomOf="@id/nameView"
+        app:layout_constraintStart_toEndOf="@id/avatarImageView"
+        app:layout_constraintTop_toBottomOf="@id/userNameView"
 
         tools:text="row_group_name" />
 

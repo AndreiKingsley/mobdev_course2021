@@ -14,7 +14,7 @@ import retrofit2.http.*
 interface Api {
 
     @GET("users?per_page=10")
-    suspend fun getUsers(): GetUsersResponse
+    suspend fun getUsers(): NetworkResponse<List<User>, Unit>
 
     @POST("auth/sign-in-email")
     suspend fun signInWithEmail(
@@ -43,8 +43,3 @@ interface Api {
         @Body request: CreateProfileRequest
     ): NetworkResponse<AuthTokens, CreateProfileErrorResponse>
 }
-
-@JsonClass(generateAdapter = true)
-data class GetUsersResponse(
-    @Json(name = "data") val data: List<User>
-)
