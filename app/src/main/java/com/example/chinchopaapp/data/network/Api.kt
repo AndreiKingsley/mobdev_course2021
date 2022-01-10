@@ -13,6 +13,10 @@ import retrofit2.http.*
 
 interface Api {
 
+    // TODO change
+    @GET("profile")
+    suspend fun getProfile(): NetworkResponse<User, Unit>
+
     @GET("users?per_page=10")
     suspend fun getUsers(): NetworkResponse<List<User>, Unit>
 

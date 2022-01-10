@@ -14,6 +14,9 @@ class UsersRepository @Inject constructor(
 
     private val api by lazy { apiLazy.get() }
 
+    suspend fun getProfile(): NetworkResponse<User, Unit> =
+        api.getProfile()
+
     suspend fun getUsers(): NetworkResponse<List<User>, Unit> =
         api.getUsers()
 } 
