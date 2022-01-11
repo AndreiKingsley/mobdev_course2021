@@ -66,7 +66,7 @@ class MockApi : Api {
     override suspend fun verifyRegistrationCode(
         code: String,
         email: String?,
-        phoneNumber: String?
+        //phoneNumber: String?
     ): NetworkResponse<VerificationTokenResponse, VerifyRegistrationCodeErrorResponse> {
         TODO("Not yet implemented")
     }

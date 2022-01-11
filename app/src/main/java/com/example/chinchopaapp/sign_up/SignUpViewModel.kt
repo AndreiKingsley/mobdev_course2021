@@ -2,6 +2,7 @@ package com.example.chinchopaapp.sign_up
 
 import androidx.lifecycle.viewModelScope
 import com.example.chinchopaapp.BaseViewModel
+import com.example.chinchopaapp.interactor.SignUpInteractor
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.flow.Flow
@@ -11,7 +12,9 @@ import timber.log.Timber
 import javax.inject.Inject
 
 @HiltViewModel
-class SignUpViewModel @Inject constructor() : BaseViewModel() {
+class SignUpViewModel @Inject constructor(
+    signUpInteractor: SignUpInteractor
+) : BaseViewModel() {
 
     private val _eventChannel = Channel<Event>(Channel.BUFFERED)
 

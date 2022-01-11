@@ -39,7 +39,7 @@ interface Api {
     suspend fun verifyRegistrationCode(
         @Query("code") code: String,
         @Query("email") email: String?,
-        @Query("phone_number") phoneNumber: String?
+       // @Query("phone_number") phoneNumber: String?
     ): NetworkResponse<VerificationTokenResponse, VerifyRegistrationCodeErrorResponse>
 
     @PUT("registration/create-profile")
