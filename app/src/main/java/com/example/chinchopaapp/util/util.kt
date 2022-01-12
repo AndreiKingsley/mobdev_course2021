@@ -1,4 +1,4 @@
-package com.example.chinchopaapp
+package com.example.chinchopaapp.util
 
 import android.content.res.Resources
 import android.text.SpannableStringBuilder

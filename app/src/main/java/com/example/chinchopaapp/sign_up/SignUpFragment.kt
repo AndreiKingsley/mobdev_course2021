@@ -23,7 +23,7 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.chinchopaapp.BaseFragment
 import com.example.chinchopaapp.R
 import com.example.chinchopaapp.databinding.FragmentSignUpBinding
-import com.example.chinchopaapp.getSpannedString
+import com.example.chinchopaapp.util.getSpannedString
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.flow.collect

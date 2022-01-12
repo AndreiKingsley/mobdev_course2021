@@ -3,8 +3,6 @@ package com.example.chinchopaapp.email_confirmation
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.View
-import androidx.core.text.buildSpannedString
-import androidx.core.text.inSpans
 import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.viewModels
 import androidx.navigation.fragment.findNavController
@@ -12,7 +10,6 @@ import by.kirich1409.viewbindingdelegate.viewBinding
 import com.example.chinchopaapp.BaseFragment
 import com.example.chinchopaapp.R
 import com.example.chinchopaapp.databinding.FragmentEmailConfirmationBinding
-import com.example.chinchopaapp.getSpannedString
 import dagger.hilt.android.AndroidEntryPoint
 import dev.chrisbanes.insetter.applyInsetter
 
