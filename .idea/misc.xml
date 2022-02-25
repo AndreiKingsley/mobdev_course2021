@@ -25,6 +25,28 @@
         <entry key="..\:/appcc/app/src/main/res/layout/item_onboarding_text.xml" value="0.15677083333333333" />
         <entry key="..\:/appcc/app/src/main/res/layout/item_user.xml" value="0.20520833333333333" />
         <entry key="..\:/appcc/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.15677083333333333" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3769230769230769" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/drawable/bg_verification_code_slot_activated.xml" value="0.3769230769230769" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/drawable/bg_verification_code_slot_cursor.xml" value="0.22135416666666666" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/drawable/bg_verification_code_slot_normal.xml" value="0.3769230769230769" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/drawable/ic_logout_svgrepo_com.xml" value="0.22135416666666666" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/drawable/selector_bg_verification_code_slot.xml" value="0.3769230769230769" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/layout/empty_list.xml" value="0.20520833333333333" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/layout/fragment_bookmarks.xml" value="0.20520833333333333" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/layout/fragment_email_confirmation.xml" value="0.20520833333333333" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/layout/fragment_email_confitmation.xml" value="0.276268115942029" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/layout/fragment_likes.xml" value="0.1" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/layout/fragment_news.xml" value="0.1" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/layout/fragment_onboarding.xml" value="0.20520833333333333" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/layout/fragment_profile.xml" value="0.1" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/layout/fragment_sign_in.xml" value="0.28940217391304346" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/layout/fragment_sign_up.xml" value="0.28940217391304346" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/layout/fragment_userlist.xml" value="0.20520833333333333" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/layout/item_onboarding_text.xml" value="0.20520833333333333" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/layout/item_post_remaining_likes_count.xml" value="0.19791666666666666" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/layout/item_user.xml" value="0.20520833333333333" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/layout/view_verification_code_edit_text.xml" value="0.2694746376811594" />
+        <entry key="..\:/mobdev_course2021/app/src/main/res/layout/view_verification_code_slot.xml" value="0.20520833333333333" />
         <entry key="app/src/main/res/drawable/ic_android_white_24dp.xml" value="0.2546875" />
         <entry key="app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.2546875" />
         <entry key="app/src/main/res/layout/activity_kek.xml" value="0.20425724637681159" />

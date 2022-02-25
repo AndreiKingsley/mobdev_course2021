@@ -18,6 +18,7 @@ import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.hannesdorfmann.adapterdelegates4.ListDelegationAdapter
 import by.kirich1409.viewbindingdelegate.viewBinding
+import dev.chrisbanes.insetter.applyInsetter
 import kotlinx.coroutines.*
 import kotlinx.coroutines.sync.Mutex
 import kotlinx.coroutines.sync.withLock
@@ -113,6 +114,14 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        viewBinding.volumeControlButton.applyInsetter {
+            type(statusBars = true) { margin() }
+        }
+        viewBinding.signUpButton.applyInsetter {
+            type(navigationBars = true) { margin() }
+        }
+
         viewBinding.playerView.player = player
         viewBinding.viewPager.setTextPages()
         viewBinding.viewPager.attachDots(viewBinding.onboardingTextTabLayout)
@@ -122,12 +131,12 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
             Toast.makeText(requireContext(), "Нажата кнопка войти", Toast.LENGTH_SHORT).show()
         }
 
-         */
+
         viewBinding.signUpButton.setOnClickListener {
             // TODO: Go to SignUpFragment.
             Toast.makeText(requireContext(), "Нажата кнопка зарегистрироваться", Toast.LENGTH_SHORT)
                 .show()
-        }
+        } */
         viewBinding.viewPager.setOffscreenPageLimit(3)
         viewBinding.viewPager.setPageTransformer { page, position ->
             val myOffset: Float = position * -150
@@ -140,8 +149,14 @@ class OnboardingFragment : Fragment(R.layout.fragment_onboarding) {
 
         viewBinding.signInButton.setOnClickListener {
             // TODO: Go to SignInFragment.
-            Toast.makeText(requireContext(), "Нажата кнопка войти", Toast.LENGTH_SHORT).show()
+        //    Toast.makeText(requireContext(), "Нажата кнопка войти", Toast.LENGTH_SHORT).show()
             findNavController().navigate(R.id.action_onBoardingFragment_to_signInFragment)
+        }
+
+        viewBinding.signUpButton.setOnClickListener {
+            // TODO: Go to SignInFragment.
+            //    Toast.makeText(requireContext(), "Нажата кнопка войти", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.action_onBoardingFragment_to_signUpFragment)
         }
 
         val volumeControlButton = viewBinding.volumeControlButton

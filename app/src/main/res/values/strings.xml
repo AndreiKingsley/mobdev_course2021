@@ -1,3 +1,5 @@
+<!DOCTYPE resources [<!-- Non-breaking space, U+00A0. -->
+    <!ENTITY nbsp "&#160;">]>
 <resources>
     <string name="app_name">Android App Club</string>
     <string name="onboarding_view_pager_text_1">Welcome to the App Zone</string>
@@ -5,9 +7,8 @@
     <string name="onboarding_view_pager_text_3">Elegant navigation</string>
     <string name="onboarding_sign_in_button_text">Войти</string>
     <string name="onboarding_sign_up_button_text">Зарегистрироваться</string>
-    <string name="main">Main</string>
+    <string name="main">MainKek</string>
     <string name="news">News</string>
-    <string name="sign_in_sign_in_button_text">Войти</string>
 
 
     <string name="bottom_navigation_title_news">Лента</string>
@@ -15,5 +16,36 @@
     <string name="bottom_navigation_title_likes">Лайки</string>
     <string name="bottom_navigation_title_bookmarks">Закладки</string>
     <string name="bottom_navigation_title_profile">Профиль</string>
+
+    <string name="sign_in_sign_in_button_text">Войти</string>
+    <string name="sign_in_email_text_layout_hint">Почта</string>
+    <string name="sign_in_password_text_layout_hint">Пароль</string>
+    <string name="sign_in_back_alert_dialog_text">Введенные данные пропадут</string>
+    <string name="sign_in_back_alert_dialog_cancel_button_text">Отменить</string>
+    <string name="sign_in_back_alert_dialog_ok_button_text">Ок</string>
+    <string name="sign_up_club_rules">правила клуба</string>
+    <string name="sign_up_terms_and_conditions_template">Я принимаю %s</string>
+    <string name="sign_up_firstname_text_layout_hint">Имя</string>
+    <string name="sign_up_lastname_text_layout_hint">Фамилия</string>
+    <string name="sign_up_nickname_text_layout_hint">Никнейм</string>
+    <string name="sign_up_under_email_text">Будет виден только вам</string>
+    <string name="sign_up_sign_up_button_text">Зарегистрироваться</string>
+    <string name="sign_up_under_nickname_text">Будет виден всем пользователям</string>
+    <string name="news_toolbar_title">Новости</string>
+    <string name="logout_button_text">Logout</string>
+    <string name="common_general_error_text">Что-то пошло не так</string>
+    <string name="back_desc">Back</string>
+    <string name="email_verification_title_text">Код подтверждения выслан вам на почту</string>
+    <string name="email_confirmation_send_code_again">Выслать код повторно</string>
+    <string name="email_verification_send_code_timer_string">Через %s секунд</string>
+    <string name="email_confirmation_confirm_code">Подтвердить код</string>
+    <string name="search_users_hint">Найти пользователей</string>
+    <string name="users_toolbar_title">Пользователи</string>
+    <string name="search_by_substring_option">Искать по подстроке</string>
+    <string name="logout_button_desc">Logout Button</string>
+    <string name="profile_toolbar_title">Профиль</string>
+    <string name="no_users_found_text">Пользователей не найдено</string>
+    <string name="common_counter_prefix">+%d</string>
+    <string name="likes_title">Лайки</string>
 </resources>
 

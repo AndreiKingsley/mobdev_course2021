@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/newsFragment"
-        android:name="com.example.chinchopaapp.NewsFragment"
+        android:name="com.example.chinchopaapp.news.NewsFragment"
         android:label="NewsFragment" />
 
     <fragment
@@ -15,7 +15,7 @@
         android:label="ProfileFragment" />
     <fragment
         android:id="@+id/userListFragment"
-        android:name="com.example.chinchopaapp.UserListFragment"
+        android:name="com.example.chinchopaapp.users.UserListFragment"
         android:label="UserListFragment" />
     <fragment
         android:id="@+id/likesFragment"

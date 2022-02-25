@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PrimaryButton">
+        <item name="backgroundTint">@color/orange</item>
+    </style>
+
+    <style name="SecondaryButton">
+        <item name="backgroundTint">@color/dark_turquoise</item>
+    </style>
+
+    <style name="BackButton" parent="Widget.AppCompat.ImageButton">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_marginStart">24dp</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:src">@drawable/ic_baseline_arrow_back_24</item>
+    </style>
+
+    <style name="TextInputField" parent="Widget.Design.TextInputLayout">
+        <item name="android:background">@color/light_grey</item>
+    </style>
+
+    <style name="CheckBox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:buttonTint">@color/black</item>
+    </style>
+</resources>
